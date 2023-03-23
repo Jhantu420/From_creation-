@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(173, 206, 206);
+        }
+        .container{
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .apply_box{
+            max-width: 600px;
+            padding: 20px;
+            background-color: white;
+            margin: 0 auto;
+            margin-top: 50px;
+            box-shadow: 4px 3px 5px gray;
+            border-radius: 10px;
+        }
+        .web{
+            font-size: 20px;
+        }
+        .form_container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .form_control{
+            display: flex;
+            flex-direction: column;
+        }
+        label{
+            font-size: 16px;
+            margin-bottom: 3px;
+            margin-top: 7px;
+        }
+        input,select,textarea{
+            padding: 6px,10px;
+            border:1px solid gray;
+            font-size:15px;
+        }
+        .button{
+            justify-content: flex-end;
+        }
+        .button_container{
+            display: flex;
+            justify-content: flex-end;
+        }
+        button{
+            background-color: red;
+            padding:  5px 10px;
+            border-radius: 7px;
+            color: white;
+            transition: 0.3s case-in;
+            border: transparent solid 2px;
+        }
+        button:hover{
+            background-color: rgb(209, 93, 93);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="apply_box"><h1>Job Applicaton <span class="web">(Web)</span></h1>
+            <form action="">
+                <div class="form_container">
+
+
+                    <div class="form_control">
+                        <label for="first_name">First Name</label>
+                        <input type="text" id="first_name"placeholder="Enter First Name....">
+                        <label for="Last_name">Last Name</label>
+                        <input type="text" id="Last_name"placeholder="Enter Last Name....">
+                    </div>
+
+
+
+                    <div class="form_control">
+                        <label for="email">Email</label>
+                        <input type="email" id="email"placeholder="Enter mail id....">
+                    </div>
+
+
+
+                    <div class="form_control">
+                        <label for="Job role">Job role</label>
+                        <select id="Job role">
+                            <option value="#">Select Job Role</option>
+                            <option value="frontend">Frontend Developer</option>
+                            <option value="backend">Backend Developer</option>
+                            <option value="full_stack">Full Stack Developer</option>
+                            <option value="ui_ux">UI UX Developer</option>
+                        </select>
+                    </div>
+
+
+
+                    <div class="form_control">
+                        <label for="add">Address</label>
+                        <textarea name="Address" id="add" cols="30" rows="10" placeholder="Enter Address"></textarea>
+                    </div>
+
+
+
+                    <div class="form_control">
+                        <label for="city">City</label>
+                        <input type="text" id="city"placeholder="Enter City....">
+                    </div>
+
+
+
+                    <div class="form_control">
+                        <label for="pin">PIN</label>
+                        <input type="number" id="pin"placeholder="Enter Pin number....">
+                    </div>
+
+
+                    <div class="form_control">
+                        <label for="date">Date</label>
+                        <input type="date" id="date"placeholder="Enter Date of Birth...">
+                    </div> 
+
+
+
+
+
+                    <div class="form_control">
+                        <label for="cv">Upload Your CV</label>
+                        <input type="file" id="cv"placeholder="Upload Your CV....">
+                    </div>
+
+
+
+                    <div class="button_container">
+                        <div class="button">
+                            <button type="submit">Apply Now</button>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>
